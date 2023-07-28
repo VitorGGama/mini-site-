@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* Regras css para o site de exemplo
+O que você fizer aqui vai formatar todas as páginas HTML conectadas com este arquivo. */
+
+/* seletor universal
+alterando o box model para todas as tags do HTML, sempre colocar */
+* { box-sizing: border-box;}
+body 
+
+{   background-image: url(../imagens/tarde.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+/* seletor ID/IDENTIFICADO */
+#container {
+    background-color: rgba(218, 209, 209, 0.664);
+    width: 80%;
+    margin: auto;
+/* limitando a largura máxima */
+    max-width: 1100px;
+    /* limitando a largura miníma */
+    min-width: 600;   
+/* largura */
+    padding: 10px;
+    border-radius: 50px;
+    /* cor distH distV esfumaçamento */
+    box-shadow: rgb(19, 19, 18) 5px 5px 20px;
+}
+
+/* tornando a imagem responsiva/flexiveis */
+img {
+    max-width: 100%;   
+}
+
+h1 {
+    padding: 10px;
+    background: linear-gradient(45deg, transparent, yellow, red);
+    font-family: 'Shantell Sans', cursive;
+    text-align: center;
+    font-weight: 400;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(44,115,201,0.4108018207282913) 10%, rgba(52,50,62,0.08867296918767509) 61%, rgba(111,9,121,0.6348914565826331) 100%);
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+h2 {
+    background-image: url(../imagens/oriental-tiles.png);
+    color: white;
+    padding: 10px;
+    border-left-width: 10px;
+    border-left-color: yellow;
+    border-left-style: solid ;
+
+    border-right-width: 10px;
+    border-right-color: yellow;
+    border-right-style: solid;
+}
+
+/* seletor CLASSE */
+.centralizar {text-align: center;}
+.sombra-texto{text-shadow: black 2px 2px 3px;}
+.borda-arredondada{ border-radius: 10px;}
+.destaque { background-color: yellow;
+            padding: 1px;
+             border: solid 2px rgb(194, 45, 144);}
+
+             /* regras para o menu links */
+             nav { text-align: center;}
+
+             /* seletor descendente */
+              nav a { color: rgb(209, 21, 52);
+                 background-color: rgb(22, 21, 21);
+                 text-decoration: none;
+                 font-weight: bold; 
+                 padding: 20px;
+                width: 30%;
+                display: inline-block;
+                }
+
+                /* Regra de acionamento do link
+                seletor descendente + pseudo-classe */
+                nav a:hover {
+                    background-color: darkblue;
+                    transform: translateY(-10px);
+                    /* transition: 2s; */ }
+
+                    figure {
+                        margin: 0; /*css reset*/
+                        text-align: center;
+                      
+                        position: relative;
+                        max-width: 419px;
+                        margin: 0 auto;
+                    }
+                    figcaption {
+                        width: 100%;
+                        font-weight: bold;
+                        position:absolute;
+                        
+                        background-color: rgba(135, 134, 202, 0.623);
+                        bottom: 30px;
+                        right: 0;
+                    }
+                    /*seletor descendente  */
+                    figure img {
+                        filter: grayscale(100%);
+                        transition: 0,5s;
+                        cursor: pointer;
+                        
+                    }
+
+                    figure img:hover {
+                        filter: none;
+                        transform: scale(1.05) rotate(3deg)
+                    }
+
+                    /* seletor DESCENDENTE 
+                    selecionar todas as iamgens */
+                    .centralizar img {clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); 
+                     }
+                     /* regra de acionamento do link
+                     seletor descendente + pseudo-classe
+                     :hover - mouse
+                     focus - foco(teclado, dedo, etc) */
+                     nav a :hover, nav a :focus  {
+                        background-color: blue;
+                        transform: translate(-10px);
+                     }
+
+                     ul {
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        color: red;                   
+                     }
+                    ul li:first-child {color: blue;}
+                    ul li:last-child { color: green;}
+                    ul li:nth-last-child(2) {color: black;}
+                    ul li:nth-child(odd) {background-color: rgba(93, 122, 211, 0.644);}
+                    ul li:nth-child(even) {background-color: rgba(179, 91, 152, 0.507);}
+                    ul li:nth-child(3n) {background-color: rgba(150, 101, 101, 0.616);}
+
+
+
+
+                
+               
+             
+
+
+
